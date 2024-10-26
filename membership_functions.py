@@ -35,3 +35,6 @@ def trimf(x, a: float, b: float, c: float):
     iterable = (__trimf(item, a, b, c) for item in x)
     mf = np.fromiter(iterable, float)
     return np.nan_to_num(mf)
+
+def singleton(x, a: float):
+    return np.array([1.0 if xi == a else 0.0 for xi in x])

@@ -2,7 +2,7 @@ import model
 import inference_mamdani
 import fuzzy_operators
 
-crisp = [8, 3.5, 65]
+crisp = [8, 2, 20]
 
 inference_mamdani.preprocessing(model.input_lvs, model.output_lv)
 result = inference_mamdani.process(model.input_lvs, model.output_lv, model.rule_base, crisp)
